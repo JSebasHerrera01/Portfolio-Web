@@ -119,3 +119,108 @@ html {
     font-size: 20px;
     transition: .3s;
 }
+
+.start .container-banner .social-networks a:hover {
+    background-color: var(--color-dark-a);
+}
+
+/* ABOUT ME SECTION*/
+.about-me {
+    background-color: var(--color-dark-header);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.about-me .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-me h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 20px 0;
+}
+
+.about-me .container-section p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about-me .container-section p span {
+    color: var(--color-dark-a);
+    font-weight: bold;
+}
+
+.about-me .row {
+    display: flex;   
+}
+
+.about-me .row .column {
+    width: 50%;
+}
+
+.about-me .row .column h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.about-me .row .column ul {
+    list-style: none;
+}
+
+.about-me .row .column ul li {
+    margin: 12px 0;
+}
+
+.about-me .row .column ul li strong {
+    display: inline-block;
+    color: var(--color-dark-a);
+    width: 130px;
+}
+
+.about-me .row .column ul li span {
+    background-color: var(--color-dark-a);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.about-me .row .column .container-interests {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me .row .column .container-interests .interest {
+    width: 110px;
+    height: 100px;
+    background-color:#252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.about-me .row .column .container-interests .interest:hover {
+    background-color: var(--color-dark-a);   
+}
+
+.about-me .row .column .container-interests .interest i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-me button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+}
+
