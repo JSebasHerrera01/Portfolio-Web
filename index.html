@@ -1,258 +1,385 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Portafolio Web</title>
-</head>
-<body>
+  </head>
+  <body>
+
     <!-- Menu Header-->
     <div class="container-header">
-        <header>
-            <div class="logo">
-                <a href="#">Juan Sebastian</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#start">INICIO</a></li>
-                    <li><a href="#about-me">SOBRE MI</a></li>
-                    <li><a href="#skills">HABILIDADES</a></li>
-                    <li><a href="#experience">EXPERIENCIA</a></li>
-                    <li><a href="#projects">PROYECTOS</a></li>
-                    <li><a href="#contact">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-        </header>
+      <header>
+        <div class="logo">
+          <a href="#">Juan Sebastian</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#start" onclick="select()">INICIO</a></li>
+            <li><a href="#about-me" onclick="select()">SOBRE MI</a></li>
+            <li><a href="#skills"  onclick="select()">HABILIDADES</a></li>
+            <li><a href="#curriculum"  onclick="select()">EXPERIENCIA</a></li>
+            <li><a href="#portfolio"  onclick="select()">PROYECTOS</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive"  onclick="hideViewMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
+
     <!-- Section Start-->
     <section id="start" class="start">
-        <div class="container-banner">
-            <div class="container-img">
-                <img class="img-hv" src="./src/foto_HV.png" alt="">
-            </div>
-            <h1>Juan Herrera</h1>
-            <h2>Ingeniero de Sistemas / desarrollador</h2>
-            <div class="social-networks">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-google"></i></a>
-            </div>
+      <div class="container-banner">
+        <div class="container-img">
+          <img class="img-hv" src="./src/foto_HV.png" alt="" />
         </div>
+        <h1>Juan Herrera</h1>
+        <h2>Ingeniero de Sistemas / desarrollador</h2>
+        <div class="social-networks">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
     </section>
+
     <!--Section About-->
     <section id="about-me" class="about-me">
-        <div class="container-section">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Juan Sebastain Herrera</span> Lorem ipsum dolor,
-                 sit amet consectetur adipisicing elit. Tempore harum eveniet 
-                 pariatur odio quaerat quibusdam, eos commodi. Id qui pariatur nulla illo, 
-                cupiditate quia unde ut, aliquid quas dignissimos esse.</p>
+      <div class="container-section">
+        <h2>Sobre Mi</h2>
+        <p>
+          <span>Hola, soy Juan Sebastain Herrera</span> Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Tempore harum eveniet pariatur odio
+          quaerat quibusdam, eos commodi. Id qui pariatur nulla illo, cupiditate
+          quia unde ut, aliquid quas dignissimos esse.
+        </p>
 
-                <div class="row">
-                    <!--data personal-->
-                    <div class="column">
-                        <h3>Datos Personales</h3>
-                        <ul>
-                            <li>
-                                <strong>Edad</strong>
-                                22 años
-                            </li>
-                            <li>
-                                <strong>Telefono</strong>
-                                312 391 4023
-                            </li>
-                            <li>
-                                <strong>Email</strong>
-                                sebastianherrera.2015@gmail.com
-                            </li>
-                            <li>
-                                <strong>Website</strong>
-                                www.example.com
-                            </li>
-                            <li>
-                                <strong>Lugar</strong>
-                                Bogota D.C / Colombia
-                            </li>
-                            <li>
-                                <strong>Cargo</strong>
-                                <span>Ingeniero de Sistemas / Desarrollador</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--interests-->
-                    <div class="column">
-                        <h3>Intereses</h3>
-                        <div class="container-interests">
-                            <div class="interest">
-                                <i class="fa-solid fa-code"></i>
-                                <span>Programación</span>
-                            </div>
-                            <div class="interest">
-                                <i class="fa-solid fa-microchip"></i>
-                                <span>Tecnologia</span>
-                            </div>
-                            <div class="interest">
-                                <i class="fa-solid fa-gamepad"></i>
-                                <span>Videojuegos</span>
-                            </div>
-                            <div class="interest">
-                                <i class="fa-solid fa-plane-departure"></i>
-                                <span>Viajes</span>
-                            </div>
-                            <div class="interest">
-                                <i class="fa-solid fa-headphones-simple"></i>
-                                <span>Musica</span>
-                            </div>
-                            <div class="interest">
-                                <i class="fa-solid fa-camera-retro"></i>
-                                <span>Fotografia</span>
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-                <button>
-                    Descargar CV <i class="fa-solid fa-file-pdf"></i>
-                    <span class="overlay"></span>
-                </button>
+        <div class="row">
+          <!--data personal-->
+          <div class="column">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Edad</strong>
+                22 años
+              </li>
+              <li>
+                <strong>Telefono</strong>
+                312 391 4023
+              </li>
+              <li>
+                <strong>Email</strong>
+                sebastianherrera.2015@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Lugar</strong>
+                Bogota D.C / Colombia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Ingeniero de Sistemas / Desarrollador</span>
+              </li>
+            </ul>
+          </div>
+          <!--interests-->
+          <div class="column">
+            <h3>Intereses</h3>
+            <div class="container-interests">
+              <div class="interest">
+                <i class="fa-solid fa-code"></i>
+                <span>Programación</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Tecnologia</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Videojuegos</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Viajes</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <span>Musica</span>
+              </div>
+              <div class="interest">
+                <i class="fa-solid fa-camera-retro"></i>
+                <span>Fotografia</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-file-pdf"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
     </section>
+
     <!--Section skills-->
     <section id="skills" class="skills">
+      <div class="container-section">
+        <h2>Habilidades</h2>
+        <div class="row">
+          <!--Technical Skills-->
+          <div class="column">
+            <h3>Habilidades Tecnicas</h3>
+            <div class="skill">
+              <span>HTML <i class="fa-brands fa-html5"></i></span>
+              <div class="bar-skill">
+                <div class="progress html">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>CSS <i class="fa-brands fa-css3-alt"></i></span>
+              <div class="bar-skill">
+                <div class="progress css">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>JavaScript <i class="fa-brands fa-js"></i></span>
+              <div class="bar-skill">
+                <div class="progress javascript">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Node Js <i class="fa-brands fa-node-js"></i></span>
+              <div class="bar-skill">
+                <div class="progress node">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React <i class="fa-brands fa-react"></i></span>
+              <div class="bar-skill">
+                <div class="progress react">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL <i class="fa-solid fa-database"></i></span>
+              <div class="bar-skill">
+                <div class="progress sql">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>GIT <i class="fa-brands fa-git-alt"></i></span>
+              <div class="bar-skill">
+                <div class="progress git">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Professional Skills-->
+          <div class="column">
+            <h3>Habilidades Personales</h3>
+            <div class="skill">
+              <span
+                >Comunicacion <i class="fa-solid fa-microphone-lines"></i
+              ></span>
+              <div class="bar-skill">
+                <div class="progress comunicacion">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span
+                >Trabajo en equipo <i class="fa-solid fa-people-group"></i
+              ></span>
+              <div class="bar-skill">
+                <div class="progress equipo">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad <i class="fa-solid fa-land-mine-on"></i></span>
+              <div class="bar-skill">
+                <div class="progress creatividad">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span
+                >Responsabilidad <i class="fa-solid fa-hand-point-up"></i
+              ></span>
+              <div class="bar-skill">
+                <div class="progress responsabilidad">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicacion <i class="fa-solid fa-hourglass-half"></i></span>
+              <div class="bar-skill">
+                <div class="progress dedicacion">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Organizacion <i class="fa-solid fa-sitemap"></i></span>
+              <div class="bar-skill">
+                <div class="progress organizacion">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span
+                >Autodidacta <i class="fa-solid fa-chalkboard-user"></i
+              ></span>
+              <div class="bar-skill">
+                <div class="progress autodidacta">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section skills-->
+    <section id="curriculum" class="curriculum">
+      <div class="container-section">
+        <h2>Curriculum</h2>
+        <div class="row">
+          <div class="column left">
+            <h3>Educación</h3>
+            <div class="item left_">
+              <h4>Tecnologia En Desarrollo Informatico</h4>
+              <span class="casa">Universidad ECCI</span>
+              <span class="fecha">2018 - 2021</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, accusantium eaque impedit in perferendis laboriosam
+                voluptates aut fugiat ad incidunt! Magni, repellendus. Explicabo
+                illo maiores, perspiciatis sed cum accusantium atque!
+              </p>
+              <div class="conector-left">
+                <div class="circulo-left"></div>
+              </div>
+            </div>
+            <div class="item left_">
+              <h4>Ingeniero de Sistemas</h4>
+              <span class="casa">Universidad ECCI</span>
+              <span class="fecha">2021 - 2023</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, accusantium eaque impedit in perferendis laboriosam
+                voluptates aut fugiat ad incidunt! Magni, repellendus. Explicabo
+                illo maiores, perspiciatis sed cum accusantium atque!
+              </p>
+              <div class="conector-left">
+                <div class="circulo-left"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="column right">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item right_">
+              <h4>Auxiliar Desarrollador</h4>
+              <span class="casa">Banco Falabella</span>
+              <span class="fecha">2023 - 2023</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, accusantium eaque impedit in perferendis laboriosam
+                voluptates aut fugiat ad incidunt! Magni, repellendus. Explicabo
+                illo maiores, perspiciatis sed cum accusantium atque!
+              </p>
+              <div class="conector-right">
+                <div class="circulo-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section projects-->
+    <section id="portfolio" class="portfolio">
         <div class="container-section">
-            <h2>Habilidades</h2>
-            <div class="row">
-                <!--Technical Skills-->
-                <div class="column">
-                    <h3>Habilidades Tecnicas</h3>
-                    <div class="skill">
-                        <span>HTML  <i class="fa-brands fa-html5"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress html">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>CSS  <i class="fa-brands fa-css3-alt"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress css">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>JavaScript <i class="fa-brands fa-js"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress javascript">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Node Js <i class="fa-brands fa-node-js"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress node">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>React <i class="fa-brands fa-react"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress react">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL <i class="fa-solid fa-database"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress sql">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>GIT <i class="fa-brands fa-git-alt"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress git">
-                                <span>75%</span>
-                            </div>
-                        </div>
+            <h2>PORTAFOLIO</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="./src/pexels-photo-113850.jpeg" alt="" >
+                    <div class="overlay">
+                        <h3>API Rick And Morty</h3>
+                        <p>Consumo API / Filtrado</p>
                     </div>
                 </div>
-                <!--Professional Skills-->
-                <div class="column">
-                    <h3>Habilidades Personales</h3>
-                    <div class="skill">
-                        <span>Comunicacion <i class="fa-solid fa-microphone-lines"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress comunicacion">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                <div class="project">
+                    <img src="./src/pexels-photo-113850.jpeg" alt="" >
+                    <div class="overlay">
+                        <h3>API Rick And Morty</h3>
+                        <p>Consumo API / Filtrado</p>
                     </div>
-                    <div class="skill">
-                        <span>Trabajo en equipo <i class="fa-solid fa-people-group"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress equipo">
-                                <span>70%</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="project">
+                    <img src="./src/pexels-photo-113850.jpeg" alt="" >
+                    <div class="overlay">
+                        <h3>API Rick And Morty</h3>
+                        <p>Consumo API / Filtrado</p>
                     </div>
-                    <div class="skill">
-                        <span>Creatividad <i class="fa-solid fa-land-mine-on"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress creatividad">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Responsabilidad <i class="fa-solid fa-hand-point-up"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress responsabilidad">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicacion <i class="fa-solid fa-hourglass-half"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress dedicacion">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Organizacion <i class="fa-solid fa-sitemap"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress organizacion">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Autodidacta <i class="fa-solid fa-chalkboard-user"></i></span>
-                        <div class="bar-skill">
-                            <div class="progress autodidacta">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="project">
+                    <img src="./src/pexels-photo-113850.jpeg" alt="" >
+                    <div class="overlay">
+                        <h3>API Rick And Morty</h3>
+                        <p>Consumo API / Filtrado</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Section skills-->
 
-</body>
+    <!-- Footer -->
+    <footer>
+        <a href="#start" class="top">
+            <i class="fa-solid fa-angles-up"></i>    
+        </a>
+        <div class="social-networks">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+          </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
