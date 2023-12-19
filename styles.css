@@ -140,6 +140,7 @@ html {
     font-size: 48px;
     font-family: 'Righteous';
     padding: 20px 0;
+    text-align: center;
 }
 
 .about-me .container-section p {
@@ -219,8 +220,241 @@ html {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
+    color: #fff;
     width: fit-content;
     display: block;
     margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.about-me button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-dark-a);
+    z-index: -1;
+    transition: 1s;
+}
+
+.about-me button:hover .overlay {
+    width: 100%;
+}
+
+/* SECTION SKILLS */
+
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 20px 0;
+    text-align: center;
+}
+.skills .row {
+    display: flex;   
+}
+
+.skills .row .column {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .row .column h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .bar-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progress {
+    background-color: var(--color-dark-a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+}
+
+.skills .skill .bar-skill span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -22px;
+    font-size: 15px;
+}
+
+/* -------------------------Technical Skills-------------------------*/
+.skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .node {
+    width: 0%;
+    animation: 2s node forwards;
+}
+
+@keyframes node {
+    0%{width: 0%;}
+    100%{width: 75%;}
+} 
+
+.skills .skill .react {
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .sql {
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 75%;}
+} 
+
+.skills .skill .git {
+    width: 0%;
+    animation: 2s git forwards;
+}
+
+@keyframes git {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+
+/* -------------------------Personal Skills-------------------------*/
+.skills .skill .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .equipo {
+    width: 0%;
+    animation: 2s equipo forwards;
+}
+
+@keyframes equipo {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .creatividad {
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .responsabilidad {
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+
+@keyframes responsabilidad {
+    0%{width: 0%;}
+    100%{width: 75%;}
+} 
+
+.skills .skill .dedicacion {
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .organizacion {
+    width: 0%;
+    animation: 2s organizacion forwards;
+}
+
+@keyframes organizacion {
+    0%{width: 0%;}
+    100%{width: 75%;}
+} 
+
+.skills .skill .autodidacta {
+    width: 0%;
+    animation: 2s autodidacta forwards;
+}
+
+@keyframes autodidacta {
+    0%{width: 0%;}
+    100%{width: 75%;}
 }
 
