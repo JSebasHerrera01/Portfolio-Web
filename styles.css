@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;800&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-light-header: #687983; 
+    --color-dark-header: #1e2326;
+    --color-light-a: #f1fcfa; 
+    --color-dark-a: #1CB698;  
+}
+
+html {
+    /*me permite deslizar cuando hago click en los enlaces del Navbar*/
+    scroll-behavior: smooth;
+}
+
+/*menu*/
+
+.container-header {
+    background: var(--color-dark-header);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.container-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: var(--color-dark-a);
+    text-decoration: none;
+}
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a {
+    text-align: none;
+    color:#fff ;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover {
+    color: var(--color-dark-a);
+}
+
+.nav-responsive{
+    background-color: var(--color-dark-a);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Section START*/
+
+.start {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(./src/pexels-photo-113850.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.start .container-banner {
+    padding: 20px;
+    background-color: var(--color-dark-header);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.start .container-banner img {
+    margin-top: 40px;
+    border: 10px solid var(--color-dark-a);
+    width: 80%;
+    margin: auto;
+    border-radius: 60%;
+}
+.start .container-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.start .container-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+.start .container-banner .social-networks a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
